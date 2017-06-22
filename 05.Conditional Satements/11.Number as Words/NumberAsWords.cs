@@ -65,6 +65,11 @@ class NumberAsWords
                 Console.Write("{0} ", tensWords[tens - 2]);
             }
 
+            if (ones > 0)                               //You need put this code because if not numbers like ex. 21/22/23 appears equals 20.
+            {
+                Console.Write(" {0} ", onesWords[ones]);
+            }
+            
             Console.WriteLine();
             return;
         }
